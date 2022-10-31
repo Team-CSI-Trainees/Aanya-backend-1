@@ -35,16 +35,18 @@ app.post("/compose", function(req, res){
 });
 app.get("/arr/:arrname", function(req,res){
     const reqtitle = req.params.arrname;
-    for(var i=0; i<arr.length; i++){
-        const storedtitle = arr[i].title; 
-    if (storedtitle === reqtitle){
-        console.log("match found");
-        res.render("post",{
-            head: arr[i].title,
-            para: arr[i].descr
-        });
-    }   
-    }
+    arr.forEach(function(item){
+        const storedtitle = item.title;
+        if (storedtitle === reqtitle){
+            console.log("match found");
+            console.log(item.title);
+            console.log(item.descr);
+            res.render("post",{
+                head: item.title,
+                para: item.descr
+            });
+        }
+    });
 });
 
 
