@@ -3,12 +3,12 @@
     <h1>Home</h1>
     <p> <%= start %> </p>
     <button>Add Article</button>
-    <% console.log(arr); %>
-    <% for(var i=0; i<arr.length; i++){ %>
-        <% console.log(arr[i].title) %>
+    <% console.log(posts); %>
+    <% for(var i=0; i<posts.length; i++){ %>
+        <% console.log(posts[i].title) %>
         <div class="home2">
-            <h1> <%= arr[i].title %> </h1>
-            <p> <%= arr[i].descr %> </p> 
+            <h1> <%= posts[i].title %> </h1>
+            <p> <%= posts[i].content %> </p> 
         </div>
     <% } %>
 </div>
