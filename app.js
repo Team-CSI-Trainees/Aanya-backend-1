@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+
 const mongoose = require("mongoose");
 const homestartingcontent = "Hlo Everyone.....This is my blog website. You all can add your views about any particular topic here.";
 const aboutcontent = "We are here to enable people across world to exchange their ideas, thoughts, news and information. People across world can feel connected with the help of this. ";
