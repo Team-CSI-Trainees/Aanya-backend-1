@@ -22,6 +22,9 @@ nav ul li a{
     font-style: italic;
     font-size: 30px;
 }
+.comp{
+    padding: 0px 10px 0px 450px;
+}
 .navbar li a:hover{
     color: #ff004f;
     box-shadow: 0 0 10px white;
