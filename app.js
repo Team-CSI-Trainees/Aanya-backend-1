@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const port = process.env.PORT || 3000;
 
 const mongoose = require("mongoose");
 const homestartingcontent = "Hlo Everyone.....This is my blog website. You all can add your views about any particular topic here.";
@@ -51,6 +52,6 @@ app.get("/posts/:postID", function(req,res){
     });
 });
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log("Server started on port 3000");
 });
