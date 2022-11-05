@@ -38,7 +38,7 @@ app.post("/compose", function(req, res){
         title: req.body.title,
         content: req.body.desc
     });
-    post.save();
+    //post.save();
     res.redirect("/");
 });
 app.get("/posts/:postID", function(req,res){
