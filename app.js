@@ -4,7 +4,7 @@ const ejs = require("ejs");
 const port = process.env.PORT || 3000;
 
 const mongoose = require("mongoose");
-const homestartingcontent = "Hlo Everyone.....This is my blog website. You all can add your views about any particular topic here.";
+const homestartingcontent = "Hlo everyone.....This is my blog website. You all can add your views about any particular topic here.";
 const aboutcontent = "We are here to enable people across world to exchange their ideas, thoughts, news and information. People across world can feel connected with the help of this. ";
 const contactcontent = "We are here to serve you all. You can access us 24X7.";
 const app = express();
